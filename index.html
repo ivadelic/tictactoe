@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="style.css" type= "text/css">
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1> TIC TAC TOE </h1>
+	<h2> PUT YOUR GLASSES ON </h2>
+	<table>
+	<div>
+		<tr>
+			<td id ="1" ></td>
+			<td id ="2" ></td>
+			<td id ="3" ></td>
+		</tr>
+		<tr>
+			<td id ="4" ></td>
+			<td id ="5" ></td>
+			<td id ="6" ></td>
+		</tr>
+		<tr>
+			<td id ="7" ></td>
+			<td id ="8" ></td>
+			<td id ="9" ></td>
+		</tr>
+	</div>
+<!-- 	<button id="newGame" type="button">New Game</button> -->
+	</table>
+		<div align="center" class="overlay1">
+			<div class= "overlay_content1">
+				<h3></h3>	
+					<img class="gif1" src="http://stream1.gifsoup.com/view/810482/they-live-o.gif"/>
+				</div>
+		</div>
+	</div>
+
+	<div align="center" class="overlay2">
+			<div class= "overlay_content2">
+				<h3></h3>	
+					<img class="gif2" src="http://i.imgur.com/N3OxwAJ.gif">
+			</div>"/>
+		</div>
+	</div>
+
+		<div align="center" class="overlay3">
+			<div class= "overlay_content3">
+				<h3></h3>	
+					<img class="gif3" src="http://24.media.tumblr.com/27b67ac363973575729c25e8746f50b0/tumblr_n1xira9BLg1s01qkyo1_500.gif">
+			</div>"/>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script></script>
+	<script>
+		var count = 0
+		$("td").on("click", function(){
+			var self = $(this);
+
+			if(count % 2 === 0){
+					self.text("X");
+					self.addClass("x");
+			}else{
+				self.text("O");
+				self.addClass("o");
+			}
+			$(this).off("click");
+			count ++; 
+		checkboard();
+		})
+		function checkboard(){
+		if(
+			$("#1").hasClass("x") && $("#2").hasClass("x") && $("#3").hasClass("x")||
+			$("#1").hasClass("x") && $("#5").hasClass("x") && $("#9").hasClass("x")||
+			$("#2").hasClass("x") && $("#5").hasClass("x") && $("#8").hasClass("x")||
+			$("#3").hasClass("x") && $("#5").hasClass("x") && $("#7").hasClass("x")||
+			$("#4").hasClass("x") && $("#5").hasClass("x") && $("#6").hasClass("x")||
+			$("#7").hasClass("x") && $("#8").hasClass("x") && $("#9").hasClass("x")||
+			$("#1").hasClass("x") && $("#4").hasClass("x") && $("#7").hasClass("x")||
+			$("#3").hasClass("x") && $("#6").hasClass("x") && $("#9").hasClass("x")
+			){
+			$(".overlay1").fadeIn(3000);
+			$('.overlay1 h3').text("RODDY PIPER WINS. DOWN WITH THE  ALIENS. Refresh to play again.");
+		}
+		else if(
+			$("#1").hasClass("o") && $("#2").hasClass("o") && $("#3").hasClass("o")||
+			$("#1").hasClass("o") && $("#5").hasClass("o") && $("#9").hasClass("o")||
+			$("#2").hasClass("o") && $("#5").hasClass("o") && $("#8").hasClass("o")||
+			$("#3").hasClass("o") && $("#5").hasClass("o") && $("#7").hasClass("o")||
+			$("#4").hasClass("o") && $("#5").hasClass("o") && $("#6").hasClass("o")||
+			$("#7").hasClass("o") && $("#8").hasClass("o") && $("#9").hasClass("o")||
+			$("#1").hasClass("o") && $("#4").hasClass("o") && $("#7").hasClass("o")||
+			$("#3").hasClass("o") && $("#6").hasClass("o") && $("#9").hasClass("o")
+			){
+			$(".overlay2").fadeIn(3000);
+			$(".overlay2 h3").text("THE ALIENS SEE YOU CAN SEE... OBEY. Refresh to play again.");
+		} else if (count === 9){
+			$(".overlay3").fadeIn(3000);
+			$(".overlay3 h3").text("No one has won... this time. Refresh to play again.");
+		} 
+	}
+	</script>
+</body>
+</html>

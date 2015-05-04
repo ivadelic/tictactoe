@@ -1,0 +1,98 @@
+body {
+	background-image: url("https://ktismatics.files.wordpress.com/2012/09/theylive-obey.png");
+}
+h1 {
+	font-family: sans-serif;
+	color: white;
+	text-align: center;
+}
+h2 {
+	font-family: sans-serif;
+	color: white;
+	text-align: center;
+}
+td {
+	width: 180px;	 
+	height: 180px;
+	border: 2px solid white;
+	color: white;
+	font-size: 4em;
+	text-align: left;
+	font-family: sans-serif;
+}
+table {
+	margin: 0 auto;
+}
+.x {
+
+	background-image: url("http://www.theofficialjohncarpenter.com/data/movies/biopics/bprpiper.jpg");
+}
+.o {
+	background-image: url("http://vignette4.wikia.nocookie.net/aliens/images/2/2d/They_Live.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/41/window-width/406/window-height/203?cb=20120312195415");
+}
+
+.gif1 {
+	margin: 0 auto;
+	text-align: center;
+
+}
+
+.overlay1 {
+	background-color: rgba(0,0,0,0.5);
+	font-family: sans-serif;
+	z-index: 100;
+	position: absolute;
+	top: 0;
+	width:100%;
+	height: 100%;
+	display: none;
+	color: white;
+}
+
+.overlay_content1 {
+	margin-top: 25%;
+}
+
+.gif2 {
+	margin: 0 auto;
+	text-align: center;
+
+}
+
+.overlay2 {
+	background-color: rgba(0,0,0,0.5);
+	font-family: sans-serif;
+	z-index: 100;
+	position: absolute;
+	top: 0;
+	width:100%;
+	height: 100%;
+	display: none;
+	color: white;
+}
+
+.overlay_content2 {
+	margin-top: 25%;
+}
+
+.gif3 {
+	margin: 0 auto;
+	text-align: center;
+
+}
+
+.overlay3 {
+	background-color: rgba(0,0,0,0.5);
+	font-family: sans-serif;
+	z-index: 100;
+	position: absolute;
+	top: 0;
+	width:100%;
+	height: 100%;
+	display: none;
+	color: white;
+}
+
+.overlay_content3 {
+	margin-top: 25%;
+}
