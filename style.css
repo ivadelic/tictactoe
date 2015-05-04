@@ -1,16 +1,47 @@
 body {
-	background-image: url("https://ktismatics.files.wordpress.com/2012/09/theylive-obey.png");
+	background-image: url("http://image.toutlecine.com/photos/a/l/i/alien-53-g.jpg");
 }
 h1 {
-	font-family: sans-serif;
+	font-family: 'Orbitron', sans-serif;
 	color: white;
 	text-align: center;
 }
 h2 {
-	font-family: sans-serif;
+	font-family: 'Orbitron', sans-serif;
 	color: white;
 	text-align: center;
 }
+
+#status .o, #status .x {
+	display: none;
+}
+
+#pick_players span {
+	color: red;
+	cursor: pointer;
+}
+
+#pick_players span:hover {
+	color: white;
+	 text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de ;
+
+}
+
+#ai_protection_shield {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9000;
+	background-color: rgba(255, 0, 0, 0.33);
+	display: none;
+}
+
+#current_move {
+	display: none;
+}
+
 td {
 	width: 180px;	 
 	height: 180px;
@@ -23,12 +54,12 @@ td {
 table {
 	margin: 0 auto;
 }
-.x {
-
-	background-image: url("http://www.theofficialjohncarpenter.com/data/movies/biopics/bprpiper.jpg");
+td.x {
+	background-image: url("http://www.actionmoviefreak.com/images/Alien/alien-ripley-flamethrower.jpg");
+	margin: 0 auto;
 }
-.o {
-	background-image: url("http://vignette4.wikia.nocookie.net/aliens/images/2/2d/They_Live.jpg/revision/latest/window-crop/width/200/x-offset/0/y-offset/41/window-width/406/window-height/203?cb=20120312195415");
+td.o {
+	background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQzQ439m59aQ4PI6bRMo5LMpKRlRIrdongi4navWR0PPJC-J15F");
 }
 
 .gif1 {

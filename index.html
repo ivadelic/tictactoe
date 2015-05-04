@@ -2,12 +2,22 @@
 <html lang="en">
 <head>
 	<link rel="stylesheet" href="style.css" type= "text/css">
+	<link href='http://fonts.googleapis.com/css?family=Orbitron:900' rel='stylesheet' type='text/css'>
 	<meta charset="UTF-8">
 	<title>Document</title>
 </head>
 <body>
 	<h1> TIC TAC TOE </h1>
-	<h2> PUT YOUR GLASSES ON </h2>
+	<h2> NO ONE CAN HEAR YOU SCREAM </h2>
+
+	<!-- <audio autoplay loop id="music"> -->
+	<audio id="music">
+		<source src="ALIEN - The Recovery-mYEdk2H0gHw.m4a">
+	</audio>
+	<audio preload=auto id="clinking">
+		<source src="Chains-Clinking.mp3" type="audio/mpeg">
+	</audio>
+
 	<table>
 	<div>
 		<tr>
@@ -31,7 +41,7 @@
 		<div align="center" class="overlay1">
 			<div class= "overlay_content1">
 				<h3></h3>	
-					<img class="gif1" src="http://stream1.gifsoup.com/view/810482/they-live-o.gif"/>
+					<img class="gif1" src="http://i.imgur.com/CchCxw6.gif"/>
 				</div>
 		</div>
 	</div>
@@ -39,7 +49,7 @@
 	<div align="center" class="overlay2">
 			<div class= "overlay_content2">
 				<h3></h3>	
-					<img class="gif2" src="http://i.imgur.com/N3OxwAJ.gif">
+					<img class="gif2" src="https://media4.giphy.com/media/xLgenMK5LS2k0/200.gif">
 			</div>"/>
 		</div>
 	</div>
@@ -47,7 +57,7 @@
 		<div align="center" class="overlay3">
 			<div class= "overlay_content3">
 				<h3></h3>	
-					<img class="gif3" src="http://24.media.tumblr.com/27b67ac363973575729c25e8746f50b0/tumblr_n1xira9BLg1s01qkyo1_500.gif">
+					<img class="gif3" src="https://media3.giphy.com/media/YxeFowOa5CMk8/200.gif">
 			</div>"/>
 		</div>
 	</div>
@@ -82,7 +92,7 @@
 			$("#3").hasClass("x") && $("#6").hasClass("x") && $("#9").hasClass("x")
 			){
 			$(".overlay1").fadeIn(3000);
-			$('.overlay1 h3').text("RODDY PIPER WINS. DOWN WITH THE  ALIENS. Refresh to play again.");
+			$('.overlay1 h3').text("RIPLEY WINS... BUT ALWAYS BEWARE THE ALIEN.");
 		}
 		else if(
 			$("#1").hasClass("o") && $("#2").hasClass("o") && $("#3").hasClass("o")||
@@ -95,7 +105,7 @@
 			$("#3").hasClass("o") && $("#6").hasClass("o") && $("#9").hasClass("o")
 			){
 			$(".overlay2").fadeIn(3000);
-			$(".overlay2 h3").text("THE ALIENS SEE YOU CAN SEE... OBEY. Refresh to play again.");
+			$(".overlay2 h3").text("THE ALIEN HAS WON. DOWN WITH HUMAN KIND.");
 		} else if (count === 9){
 			$(".overlay3").fadeIn(3000);
 			$(".overlay3 h3").text("No one has won... this time. Refresh to play again.");
